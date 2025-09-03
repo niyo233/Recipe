@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav-ber">
+        <div class="links">
+          <span class="logo"><a href="#">Logo</a></span>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Favorites</a></li>
+            <li><a href="#">Submit Recipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <!-- icon and img -->
+          <p>i</p>
+          <img src="images/profile.jpg" alt="profile" />
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+    <!--Search Ber -->
+    <div class="search-ber">
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="search for recipes, ingredients, or cuisines..."
+        />
+      </div>
+      <div class="search-btns">
+        <button>Filters</button>
+        <button class="last">Search</button>
+      </div>
+    </div>
+    <!--Search Ber End -->
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <h1>
+          Discover Delicious Recipes <br />
+          for Every Occasion
+        </h1>
+        <p>
+          Explore thousands of recipes from around the world, created by <br />
+          home cooks and professional chefs.
+        </p>
+        <div class="hero-btn">
+          <button class="first">Explore Recipes</button>
+          <button>Watch Tutorial</button>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- Quick Categories -->
+    <section class="categories">
+      <div class="categories-container">
+        <button class="first">All Recipes</button>
+        <button>Italian</button>
+        <button>Asian</button>
+        <button>Vegetarian</button>
+        <button>Quick &amp; Easy</button>
+        <button>Desserts</button>
+        <button>Healthy</button>
+        <button>Drinks</button>
+      </div>
+    </section>
+    <!-- Quick Categories End -->
+    <!-- Main Content -->
+    <main class="main">
+      <div class="main-container">
+        <!-- Sideber -->
+        <div class="sideber">
+          <div class="sideber-container">
+            <div class="sideber-topber">
+              <h3>Filters</h3>
+              <a href="#">Reset All</a>
+            </div>
+            <!-- Meal Type -->
+            <div class="meal-type-container">
+              <h4>Meal Type</h4>
+              <div class="meal-type">
+                <div class="meal-types">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>Breakfast</span>
+                </div>
+                <div class="meal-types">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>Lunch</span>
+                </div>
+                <div class="meal-types">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>Dinner</span>
+                </div>
+                <div class="meal-types">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>Snacks</span>
+                </div>
+                <div class="meal-types">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>Desserts</span>
+                </div>
+              </div>
+            </div>
+            <!-- Meal Type End -->
+            <!-- Cooking Time -->
+            <div class="cooking-time-container">
+              <h4>Cooking Time</h4>
+              <div class="cooking-time">
+                <input
+                  type="range"
+                  id="cooking-time"
+                  min="0"
+                  max="120"
+                  step="1"
+                  value="0"
+                />
+                <div class="range-time">
+                  <span id="timeValue">5 min</span>
+                  <span id="timeValue">56 min</span>
+                  <span id="timeValue">120 min</span>
+                </div>
+              </div>
+            </div>
+            <!-- Cooking Time End -->
+            <!-- Dietary Restrictions -->
+            <div class="dietary-restrictions-container">
+              <h4>Dietary Restrictions</h4>
+              <div class="dietary-restrictions">
+                <div class="diet-types">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>Vegetarian</span>
+                </div>
+                <div class="diet-types">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>Vegan</span>
+                </div>
+                <div class="diet-types">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>Gluten-Free</span>
+                </div>
+                <div class="diet-types">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>Dairy-Free</span>
+                </div>
+                <div class="diet-types">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>Keto</span>
+                </div>
+              </div>
+            </div>
+            <!-- Dietary Restrictions End -->
+            <!-- Difficulty Level -->
+            <div class="difficulty-level-container">
+              <h4>Difficulty Level</h4>
+              <div class="difficulty-levels">
+                <button class="first">Easy</button>
+                <button>Medium</button>
+                <button>Hard</button>
+              </div>
+            </div>
+            <!-- Difficulty Level End -->
+            <!-- Unit Preference -->
+            <div class="unit-preference-container">
+              <div class="unit-preference-topber">
+                <h4>Unit Preference</h4>
+                <label class="custom-switch">
+                  <input type="checkbox" />
+                  <span class="switch-slider"></span>
+                </label>
+              </div>
+              <div class="unit-preferences">
+                <span>Metric(g, ml)</span>
+                <span>Imperials(oz, cups)</span>
+              </div>
+            </div>
+            <!-- Unit Preference End -->
+          </div>
+        </div>
+        <!-- Sideber End -->
+        <!-- Recipe Grid -->
+        <div class="recipe-grid-container">
+          <div class="recipe-grid-topber">
+            <h2>Popular Recipes</h2>
+            <div class="recipe-grid-topber-btns">
+              <button></button>
+              <button></button>
+            </div>
+          </div>
+
+          <div class="recipe-grid">
+            <!-- Recipe Card 1 -->
+            <div class="recipe-card-container">
+              <img src="images/meal-1.jpg" alt="Pasta Carbonara" />
+              <div class="recipe-text-box">
+                <span class="icon"></span>
+                <span class="cuisine-type">Italian</span>
+                <div class="ratings">
+                  <span class="stars">stars</span>
+                  <span class="rating-text">(128)</span>
+                </div>
+                <h3>Classic Pasta Carbonara</h3>
+                <div class="time-level">
+                  <span class="time"> 25 min</span>
+                  <span class="level"> Easy</span>
+                </div>
+                <div class="ingredients">
+                  <p>Pasta</p>
+                  <p>Eggs</p>
+                  <p>Bacon</p>
+                  <p>Cheese</p>
+                </div>
+                <button>View Recipe</button>
+              </div>
+            </div>
+            <!-- Recipe Card 1 end -->
+            <!-- Recipe Card 2 -->
+            <div class="recipe-card-container">
+              <img src="images/meal-2.jpg" alt="Vegetable Stir Fry" />
+              <div class="recipe-text-box">
+                <span class="icon"></span>
+                <span class="cuisine-type">Asian</span>
+                <div class="ratings">
+                  <span class="stars"></span>
+                  <span class="rating-text">(86)</span>
+                </div>
+                <h3>Vegetable Stir Fry</h3>
+                <div class="time-level">
+                  <span class="time"> 20 min</span>
+                  <span class="level"> Easy</span>
+                </div>
+                <div class="ingredients">
+                  <p>Tofu</p>
+                  <p>Vegetables</p>
+                  <p>Soy Sauce</p>
+                </div>
+                <button>View Recipe</button>
+              </div>
+            </div>
+            <!-- Recipe Card 2 end -->
+            <!-- Recipe Card 3 -->
+            <div class="recipe-card-container">
+              <img src="images/meal-3.jpg" alt="Chocolate Chip Cookies" />
+              <div class="recipe-text-box">
+                <span class="icon"></span>
+                <span class="cuisine-type">Dessert</span>
+                <div class="ratings">
+                  <span class="stars"></span>
+                  <span class="rating-text">(215)</span>
+                </div>
+                <h3>Chocolate Chip Cookies</h3>
+                <div class="time-level">
+                  <span class="time">40 min</span>
+                  <span class="level"> Medium</span>
+                </div>
+                <div class="ingredients">
+                  <p>Chocolate</p>
+                  <p>Butter</p>
+                  <p>Flour</p>
+                </div>
+                <button>View Recipe</button>
+              </div>
+            </div>
+            <!-- Recipe Card 3 end -->
+            <!-- Recipe Card 4 -->
+            <div class="recipe-card-container">
+              <img src="images/meal-4.jpg" alt="Avocado Toast" />
+              <div class="recipe-text-box">
+                <span class="icon"></span>
+                <span class="cuisine-type">Breakfast</span>
+                <div class="ratings">
+                  <span class="stars"></span>
+                  <span class="rating-text">(92)</span>
+                </div>
+                <h3>Avocado Toast with Poached Egg</h3>
+                <div class="time-level">
+                  <span class="time">15 min</span>
+                  <span class="level"> Easy</span>
+                </div>
+                <div class="ingredients">
+                  <p>Avocado</p>
+                  <p>Eggs</p>
+                  <p>Bread</p>
+                </div>
+                <button>View Recipe</button>
+              </div>
+            </div>
+            <!-- Recipe Card 4 end -->
+            <!-- Recipe Card 5 -->
+            <div class="recipe-card-container">
+              <img src="images/meal-5.jpg" alt="Margherita Pizza" />
+              <div class="recipe-text-box">
+                <span class="icon"></span>
+                <span class="cuisine-type">Italian</span>
+                <div class="ratings">
+                  <span class="stars"></span>
+                  <span class="rating-text">(178)</span>
+                </div>
+                <h3>Homemade Margherita Pizza</h3>
+                <div class="time-level">
+                  <span class="time">60 min</span>
+                  <span class="level">Medium</span>
+                </div>
+                <div class="ingredients">
+                  <p>Dough</p>
+                  <p>Tomatoes</p>
+                  <p>Mozzarella</p>
+                </div>
+                <button>View Recipe</button>
+              </div>
+            </div>
+            <!-- Recipe Card 5 end -->
+            <!-- Recipe Card 6 -->
+            <div class="recipe-card-container">
+              <img src="images/meal-6.jpg" alt="Smoothie Bowl" />
+              <div class="recipe-text-box">
+                <span class="icon"></span>
+                <span class="cuisine-type">Breakfast</span>
+                <div class="ratings">
+                  <span class="stars"></span>
+                  <span class="rating-text"> (104)</span>
+                </div>
+                <h3>Berry Smoothie Bowl</h3>
+                <div class="time-level">
+                  <span class="time">10 min</span>
+                  <span class="level">Easy</span>
+                </div>
+                <div class="ingredients">
+                  <p>Berries</p>
+                  <p>Banana</p>
+                  <p>Yogurt</p>
+                </div>
+                <button>View Recipe</button>
+              </div>
+            </div>
+            <!-- Recipe Card 6 end -->
+          </div>
+          <!-- Load More -->
+          <button class="load-more">Load More</button>
+          <!-- Load More End -->
+        </div>
+        <!-- Recipe Grid End -->
+      </div>
+    </main>
+    <!-- Main Content End -->
+    <!-- View Model -->
+    <!-- <section class="viewmodel-container">
+      <h3>Classic Pasta Carbonara</h3>
+      <div class="viewmodels">
+        <img src="images/meal-7.jpg" alt="Pasta Carbonara" />
+        <div class="viewmodel-one">
+          <span class="cuisine-type">Italian</span>
+          <div class="ratings">
+            <span class="stars">stars</span>
+            <span class="rating-text">(128 reviews)</span>
+          </div>
+          <div class="time-level">
+            <span class="time">25 min</span>
+            <span class="servings">4 servings</span>
+            <span class="level">Easy</span>
+          </div>
+          <div class="ingredients">
+            <p>Italian</p>
+            <p>Pasta</p>
+            <p>Dinner</p>
+          </div>
+          <p>
+            A classic Italian pasta dish <br />
+            made with crispy pancetta, eggs, <br />
+            Parmesan cheese, and plenty of black pepper. <br />
+            Simple yet incredibly satisfying!
+          </p>
+        </div>
+        <div class="viewmodel-two">
+          <h4>Ingredients</h4>
+          <ul>
+            <li>350g spaghetti</li>
+            <li>150g pancetta or guanciale, diced</li>
+            <li>3 large eggs</li>
+            <li>75g Pecorino Romano, grated</li>
+            <li>50g Parmesan, grated</li>
+            <li>Freshly ground black pepper</li>
+            <li>Salt, to taste</li>
+          </ul>
+          <div class="viewmodel-btn">
+            <button class="first">Full Recipe</button>
+            <button>Save Recipe</button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- View Model End -->
+    <!-- Featured Section -->
+    <section class="featured-container">
+      <div class="featured-topber">
+        <h2>Trending This Week</h2>
+        <p>
+          Discover the most popular recipes that our community is loving right
+          now
+        </p>
+      </div>
+      <div class="featured-items">
+        <!-- Featured Recipe 1 -->
+        <div class="featured-one">
+          <img src="images/new-meal.jpg" alt="Beef Wellington" />
+          <span class="cuisine-type">Featured</span>
+          <div class="featured-text">
+            <div class="ratings">
+              <span class="stars">stars</span>
+              <span class="rating-text">(312)</span>
+            </div>
+            <div>
+              <h3>Classic Beef Wellington</h3>
+              <p class="details">
+                A showstopping centerpiece for any special <br />
+                occasion. Tender beef fillet wrapped in <br />
+                mushroom duxelles, prosciutto, and golden <br />
+                puff pastry.
+              </p>
+            </div>
+            <div class="time-level">
+              <span class="time">2 hrs 30 min</span>
+              <span class="level">Advanced</span>
+            </div>
+            <div class="ingredients">
+              <p>Beef</p>
+              <p>Mushrooms</p>
+              <p>Pastry</p>
+              <p>Special Occasion</p>
+            </div>
+            <button>View Recipe</button>
+          </div>
+        </div>
+        <!-- Featured Recipe 1 End -->
+        <!-- Featured Recipe 2 -->
+        <div class="featured-two">
+          <img src="images/new-drink.jpg" alt="Summer Cocktail" />
+          <span class="cuisine-type">New</span>
+          <div class="featured-text">
+            <div class="ratings">
+              <span class="stars">stars</span>
+              <span class="rating-text">(87)</span>
+            </div>
+
+            <div>
+              <h3>Berry Mint Mojito</h3>
+              <p class="details">
+                A refreshing summer cocktail with fresh <br />
+                berries and mint
+              </p>
+            </div>
+            <div class="time-level">
+              <span class="time">5 min</span>
+              <span class="level">Easy</span>
+            </div>
+            <button>View Recipe</button>
+          </div>
+        </div>
+        <!-- Featured Recipe 2 End -->
+      </div>
+    </section>
+    <!-- Featured Section End -->
+    <!-- CTA Section -->
+    <section class="cta-container">
+      <div class="cta">
+        <div class="cta-text-box">
+          <h2>Share Your Culinary Creations</h2>
+          <p class="cta-text">
+            Join our community of food enthusiasts and share your favorite
+            recipes with <br />
+            the world. Get feedback, save your favorites, and discover new
+            culinary <br />
+            inspirations
+          </p>
+          <div class="cta-btns">
+            <button class="first">Submit a Recipe</button>
+            <button>Join Community</button>
+          </div>
+        </div>
+        <div class="cta-img-box">
+          <img src="images/community.png" alt="Cooking Community" />
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section End -->
+    <!-- Testimonials -->
+    <section class="testimonial-container">
+      <div class="testimonial-topber">
+        <h2>What Our Community Says</h2>
+        <p>Hear from our community of home cooks and food enthusiasts</p>
+      </div>
+      <div class="testimonials">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <span class="ratings"> stars</span>
+          <p class="testimonial-text">
+            "I've been using this website for months now and it has completely
+            transformed my cooking. The recipes are easy to follow and always
+            turn out delicious. I love how I can filter by ingredients I already
+            have at home!"
+          </p>
+          <div class="profile">
+            <img src="images/testimonial-1.jpg" alt="Profile" />
+            <span>
+              <h4 class="name">Sophia Rodriguez</h4>
+              <p class="job">Home Cook</p>
+            </span>
+          </div>
+        </div>
+        <!-- Testimonial 1 End -->
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <span class="ratings">stars</span>
+          <p class="testimonial-text">
+            "I started cooking during the pandemic and this website has been my
+            go-to resource. The step-by-step instructions and photos make it
+            easy for beginners like me. I've gone from burning toast to making
+            impressive meals for my family!"
+          </p>
+          <div class="profile">
+            <img src="images/testimonial-2.jpg" alt="Profile" />
+            <span>
+              <h4 class="name">James Wilson</h4>
+              <p class="job">Cooking Enthusiast</p>
+            </span>
+          </div>
+        </div>
+        <!-- Testimonial 2 End -->
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <span class="ratings">stars</span>
+          <p class="testimonial-text">
+            "As a professional chef, I'm impressed by the quality and variety of
+            recipes here. I even discovered new techniques and flavor
+            combinations that I've incorporated into my restaurant menu. The
+            community feedback is invaluable!"
+          </p>
+          <div class="profile">
+            <img src="images/testimonial-3.jpg" alt="Profile" />
+            <span>
+              <h4 class="name">Marcus Chen</h4>
+              <p class="job">Professional Chef</p>
+            </span>
+          </div>
+        </div>
+        <!-- Testimonial 3 End -->
+      </div>
+    </section>
+    <!-- Testimonials End -->
+    <!-- Newsletter -->
+    <section class="newsletter-container">
+      <div class="newsletter-topber">
+        <h2>Get Weekly Recipe Inspiration</h2>
+        <p>
+          Subscribe to our newsletter and receive the latest recipes, cooking
+          tips, and exclusive content directly in your inbox.
+        </p>
+      </div>
+      <div class="input-box-container">
+        <div class="input-box">
+          <input type="search" name="search" placeholder="Your email address" />
+        </div>
+        <button>Subscribe</button>
+      </div>
+      <p>
+        By subscribing, you agree to our Privacy Policy and consent to receive
+        updates from us.
+      </p>
+    </section>
+    <!-- Newsletter End -->
+    <!-- Footer -->
+    <section class="footer-container">
+      <div class="footer">
+        <div class="footer-items">
+          <div class="footer-col">
+            <a href="#">Logo</a>
+            <p>
+              Your ultimate destination for culinary inspiration and food
+              adventures.
+            </p>
+            <div class="footer-first">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="#">Recipes</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Latest</a></li>
+              <li><a href="#">Seasonal</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Learn</h3>
+            <ul>
+              <li><a href="#">Cooking Techniques</a></li>
+              <li><a href="#">Ingredient Guides</a></li>
+              <li><a href="#">Kitchen Tips</a></li>
+              <li><a href="#">Nutrition Facts</a></li>
+              <li><a href="#">Cooking Videos</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-lastber">
+        <p>© 2025 Culinary Canvas. All rights reserved.</p>
+        <div class="lastber-icon"></div>
+      </div>
+    </section>
+    <!-- Footer End -->
+  </body>
+</html>
